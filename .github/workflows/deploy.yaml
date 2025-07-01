@@ -34,7 +34,7 @@ jobs:
           gcloud --quiet auth configure-docker
 
       - name: Get Credentials
-        uses: google-github-actions/get-gke-credentials@v0
+        uses: google-github-actions/get-gke-credentials@v1
         with:
           cluster_name: multi-cluster
           location: us-central1-c
