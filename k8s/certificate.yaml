@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: prashantbhalekar-dev-tls
+spec:
+  secretName: prashantbhalekar-dev
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: prashantbhalekar.dev
+  dnsNames:
+    - prashantbhalekar.dev
+    - www.prashantbhalekar.dev
